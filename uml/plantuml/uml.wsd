@@ -1,0 +1,20 @@
+@startuml Weather Backend
+
+start
+
+: User inserisce una località;
+: Validare la località inserita;
+
+: Richiesta HTTP GET a API Weather Forecast per ottenere coordinate;
+: Recuperare longitudine e latitudine dalla risposta;
+if (Coordinate valide?) then (Sì)
+    : Richiesta HTTP GET a API Meteo per i dati meteorologici;
+    : Estrarre e analizzare i dati dalla risposta;
+    : Restituire i dati meteorologici al frontend;
+else (No)
+    : Mostrare errore "Coordinate non trovate";
+endif
+
+stop
+
+@enduml
