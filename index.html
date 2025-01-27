@@ -26,18 +26,20 @@
 </head>
 <body class="d-flex flex-column">
     <header class="bg-primary">
-        <nav class="d-flex flex-row justify-content-center navbar navbar-expand-lg mt-3 mb-1">
-            <h1 class="text-center text-light">METEO</h1>
+        <nav class="d-flex flex-row justify-content-evenly navbar navbar-expand-lg mt-3 mb-1">
+            <i class="fs-1 bi bi-cloud-fill"></i>
+            <h1 class="text-center text-light"> METEO </h1> 
+            <i class="fs-1 bi bi-cloud-fill"></i>
         </nav>
     </header>
     <main class="d-flex flex-column flex-grow-1 justify-content-center align-items-center">
 
-        <div class="card p-3 d-flex flex-column justify-content-center align-items-center" style="width: 26rem; background-color: #00000030">
+        <div class="card p-3 d-flex flex-column justify-content-center align-items-center rounded-4 border-0 shadow bg-body-tertiary" style="width: 90%; max-width: 28rem; min-width: 19rem;">
             
             <!-- WEATHER CODE -->
-            <img style="height: 50%; width: 50%;" src="files/assets/Clear.png" alt="" id="weatherCodeImage">
-            <hr class="w-100">
-            <div class="card-body">
+            <img class="m-3" style="height: 45%; width: 45%;" src="files/assets/Clear.png" alt="" id="weatherCodeImage">
+            <hr class="w-100 mb-0">
+            <div class="card-body my-4">
                 <div class="d-flex flex-row justify-content-center align-items-center">
                     
                     <!-- TEMPERATURE -->
@@ -45,7 +47,7 @@
                     <p class="m-0" style="font-size: calc(1.775rem + 1.5vw) !important" id="temperatureField">0</p>
                     <p class="text-body-tertiary m-0 fs-6 align-self-start" >°C</p>
                 </div>
-                <div class="d-flex flex-row justify-content-center align-items-around gap-4 m-3">
+                <div class="d-flex flex-row justify-content-around align-items-center gap-4 m-3">
 
                     <!-- WIND SPEED -->
                     <div class="d-flex flex-row align-items-end">
